@@ -49,26 +49,32 @@ function createGridAndDraw(squaresPerSide) {
 askButton.addEventListener('click', () => {
     input = document.querySelector('.askBoxNum input');
     inputNum = Number(input.value);
+    const COMMENT_TIMEOUT = 2000; 
     console.log(inputNum);
     if (!inputNum) {
         comment = document.querySelector('.comment');
         comment.textContent = `Please enter a valid number!`;
         console.log(comment.textContent)
-        const TIMEOUT = 2000; 
         setTimeout(() => {
             comment.textContent = '';
-        }, TIMEOUT)
+        }, COMMENT_TIMEOUT)
+    } 
+    else if (inputNum > 100) {
+        comment = document.querySelector('.comment');
+        comment.textContent = `Please enter a number below 100!`;
+        console.log(comment.textContent) 
+        setTimeout(() => {
+            comment.textContent = '';
+        }, COMMENT_TIMEOUT)
     } else {
         rows = document.querySelectorAll('.row');
         rows = Array.from(rows);
         rows.forEach(row => {
             container.removeChild(row);
         });
-        createSquareGrid(inputNum);
-        draw();
+        createGridAndDraw(inputNum);
     }
 })
 
 // default creation and draw enabled
-createSquareGrid(10);
-draw();
+createGridAndDraw(10);

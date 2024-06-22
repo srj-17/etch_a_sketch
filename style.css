@@ -61,4 +61,6 @@ button:active {
 
 .comment {
     color: white;
+    margin: 0px;
+    padding: 0px;
 }
