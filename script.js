@@ -1,5 +1,6 @@
 let container = document.querySelector('.container'); 
-let askButton = document.querySelector('.askBoxNum button');
+let askButton = document.querySelector('.askBoxNum #create');
+let resetButton = document.querySelector('.askBoxNum #reset');
 
 function createSquareGrid(squaresPerSide) {
     for (let i = 0; i < squaresPerSide; i++) {
@@ -74,6 +75,17 @@ askButton.addEventListener('click', () => {
         });
         createGridAndDraw(inputNum);
     }
+})
+
+// clear grid
+resetButton.addEventListener('click', () => {
+    let pixels = document.querySelectorAll('.pixel');
+    pixels = Array.from(pixels);
+    resetColor = getComputedStyle(container).backgroundColor;
+
+    pixels.forEach(pixel => {
+        pixel.style.backgroundColor = resetColor;
+    });
 })
 
 // default creation and draw enabled
