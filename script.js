@@ -2,6 +2,8 @@ let container = document.querySelector('.container');
 
 function createSquareGrid(size) {
     for (let i = 0; i < size; i++) {
+        let dimension = 960 / size; // width or height of pixels according to container width of 960
+        console.log(dimension)
         const row = document.createElement('div');
         row.classList.toggle('row');
         row.style.display = 'flex';
@@ -9,7 +11,7 @@ function createSquareGrid(size) {
         for (let j = 0; j < size; j++) {
             const pixel = document.createElement('div');
             pixel.classList.toggle('pixel');
-            pixel.style.cssText = 'width: 15px; height: 15px; flex: auto;';
+            pixel.style.cssText = `width: ${dimension}px; height: ${dimension}px; flex: auto;`;
             row.appendChild(pixel);
         }   
         container.appendChild(row);
@@ -39,5 +41,5 @@ function draw() {
     });
 }
 
-createSquareGrid(32);
+createSquareGrid();
 draw();

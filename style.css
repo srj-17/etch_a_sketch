@@ -27,6 +27,7 @@ body {
 }
 
 .description {
+    vertical-align: center;
     font-size: larger;
     color: white;
 }
