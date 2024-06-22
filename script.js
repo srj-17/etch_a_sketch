@@ -17,7 +17,10 @@ function createSquareGrid(size) {
 }
 
 function colorPixel(pixel) {
-    pixel.style.backgroundColor = 'white';
+    let red = Math.floor(Math.random() * 255);
+    let green = Math.floor(Math.random() * 255);
+    let blue = Math.floor(Math.random() * 255);
+    pixel.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 }
 
 function draw() {
