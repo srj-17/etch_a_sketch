@@ -31,7 +31,7 @@ function draw() {
     const pixelsNodeList = document.querySelectorAll('.pixel');
     const pixels = Array.from(pixelsNodeList);
     pixels.forEach(pixel => {
-        let count = 0;
+        let count = 1;
         pixel.addEventListener('mouseenter', () => {
             colorPixel(pixel, count);
             count++;
