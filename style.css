@@ -27,9 +27,9 @@ body {
 }
 
 .description {
-    vertical-align: center;
     font-size: larger;
     color: white;
+    padding: 10px 0px;
 }
 
 .askBoxNum {
@@ -44,6 +44,7 @@ body {
     padding: 5px;
     border: 0px;
     border-radius: 4px;
+    align-content: right;
 }
 
 .askBoxNum button {
@@ -51,4 +52,13 @@ body {
     background-color: #A0E8AF;
     border: 0px;
     border-radius: 4px;
+}
+
+/* add button pseudo class, for reaction after clicking */
+button:active {
+    background-color: rgb(17, 153, 76);
+}
+
+.comment {
+    color: white;
 }
