@@ -5,4 +5,4 @@ This goal of this project is to teach myself the basics of DOM Manipulation usin
 TODO: 
 - [ ] Make the main page take input and scroll down to the etch-a-sketch page for sketching
 - [ ] Change input to intuitive range where increasing size means sliding the range slider to right
-- [ ] Create a button for clearing the board 
+- [x] Create a button for clearing the board 
