@@ -40,7 +40,7 @@ body {
     flex-direction: row;
 }
 
-/* slider only stylized for chrome */
+/* slider only stylized (-webkit vendor prefix) for chrome */
 .askBoxNum input[type="range"]{
     -webkit-appearance: none;
     width: 198px;
