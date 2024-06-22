@@ -41,6 +41,11 @@ function draw() {
     });
 }
 
+function createGridAndDraw(squaresPerSide) {
+    createSquareGrid(squaresPerSide);
+    draw();
+}
+
 askButton.addEventListener('click', () => {
     input = document.querySelector('.askBoxNum input');
     inputNum = Number(input.value);
