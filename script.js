@@ -3,7 +3,7 @@ let askButton = document.querySelector('.askBoxNum button');
 
 function createSquareGrid(squaresPerSide) {
     for (let i = 0; i < squaresPerSide; i++) {
-        let dimension = 960 / squaresPerSide; // width or height of pixels according to container width of 960
+        let dimension = 460 / squaresPerSide; // width or height of pixels according to container width of 960
         const row = document.createElement('div');
         row.classList.toggle('row');
         row.style.display = 'flex';
