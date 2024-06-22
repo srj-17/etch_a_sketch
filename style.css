@@ -6,7 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Roboto, 'Times New Roman', Times, serif;
+    gap: 5px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -16,3 +17,8 @@ body {
     border-radius: 8px;
 }
 
+.title {
+    font-size: 45px;
+    font-family: 'Playwrite NG Modern', Roboto, Arial;
+    font-weight: bold;
+}
