@@ -9,6 +9,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    padding: 40px 0px;
 }
 
 .container {
