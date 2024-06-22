@@ -39,5 +39,5 @@ function draw() {
     });
 }
 
-createSquareGrid(16);
+createSquareGrid(32);
 draw();
