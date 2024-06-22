@@ -31,3 +31,24 @@ body {
     font-size: larger;
     color: white;
 }
+
+.askBoxNum {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.askBoxNum input {
+    width: 195px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.askBoxNum button {
+    width: 80px;
+    background-color: #A0E8AF;
+    border: 0px;
+    border-radius: 4px;
+}

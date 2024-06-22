@@ -1,14 +1,14 @@
 let container = document.querySelector('.container'); 
 
-function createSquareGrid(size) {
-    for (let i = 0; i < size; i++) {
-        let dimension = 960 / size; // width or height of pixels according to container width of 960
+function createSquareGrid(squaresPerSide) {
+    for (let i = 0; i < squaresPerSide; i++) {
+        let dimension = 960 / squaresPerSide; // width or height of pixels according to container width of 960
         console.log(dimension)
         const row = document.createElement('div');
         row.classList.toggle('row');
         row.style.display = 'flex';
         row.style.flexDirection = 'row';
-        for (let j = 0; j < size; j++) {
+        for (let j = 0; j < squaresPerSide; j++) {
             const pixel = document.createElement('div');
             pixel.classList.toggle('pixel');
             pixel.style.cssText = `width: ${dimension}px; height: ${dimension}px; flex: auto;`;
@@ -41,5 +41,7 @@ function draw() {
     });
 }
 
-createSquareGrid();
+
+
+createSquareGrid(10);
 draw();
