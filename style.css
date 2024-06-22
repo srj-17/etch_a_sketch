@@ -3,22 +3,30 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
     font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    border: 4px solid black;
+    border: 4px solid #6E8898;
     border-radius: 8px;
+    background-color: #E3DFFF;
 }
 
 .title {
     font-size: 45px;
+    color: #c5edac;
     font-family: 'Playwrite NG Modern', Roboto, Arial;
     font-weight: bold;
+}
+
+.description {
+    font-size: larger;
+    color: white;
 }
