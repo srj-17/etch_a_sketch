@@ -22,7 +22,6 @@ function colorPixel(pixel, count) {
     let blue = Math.floor(Math.random() * 255);
     let opacity;
     if (count < 10) {
-        console.log(count);
         opacity = count * 0.1;
     } 
     pixel.style.backgroundColor = `rgb(${red}, ${green}, ${blue}, ${opacity})`;
