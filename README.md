@@ -2,4 +2,7 @@ This project tries to mimic the behaviour of [Etch-A-Sketch](https://en.wikipedi
 
 This goal of this project is to teach myself the basics of DOM Manipulation using Javascript and Flexbox.
 
-TODO: Make the main page take input and scroll down to the etch-a-sketch page for sketching
+TODO: 
+- [ ] Make the main page take input and scroll down to the etch-a-sketch page for sketching
+- [ ] Change input to intuitive range where increasing size means sliding the range slider to right
+- [ ] Create a button for clearing the board 
